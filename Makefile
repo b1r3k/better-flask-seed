@@ -20,7 +20,7 @@ install: env
 	$(PIP) install -e .
 
 run:
-	$(PYTHON) python $(APP_NAME)/main.py
+	FLASK_APP=$(APP_NAME) $(PYTHON) -m flask run
 
 flake:
 	$(FLAKE) $(APP_NAME) tests

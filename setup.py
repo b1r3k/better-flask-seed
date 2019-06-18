@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 version = '0.0.1'
 
 reqs = [
-    'aiohttp >=1.0.3, <1.1',
+    'Flask >=1.0.3, <1.1',
 ]
 
 dev_requirements = [
