@@ -5,6 +5,7 @@ version = '0.0.1'
 
 reqs = [
     'Flask >=1.0.3, <1.1',
+    'PyYAML >=5.1.1, <6',
 ]
 
 dev_requirements = [
@@ -30,14 +31,11 @@ setup(name='flask_seed',
           'Programming Language :: Python'],
       author='Łukasz Jachym',
       author_email='lukasz <dot> jachym <at> gmail <dot> com',
-      url='https://github.com/',
+      url='https://github.com/b1r3k/better-flask-seed',
       license='Apache',
       packages=find_packages(),
       install_requires = reqs,
       extras_require={
           'dev': dev_requirements
-      },
-      entry_points={
-          'app_factory': ['app = mailman:app'],
       },
       include_package_data = False)
